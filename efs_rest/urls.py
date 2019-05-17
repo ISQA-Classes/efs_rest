@@ -12,4 +12,11 @@ urlpatterns = [
     path('', views.customer_list),
     url(r'^api/customers/$', views.customer_list),
     url(r'^api/customers/(?P<pk>[0-9]+)$', views.getCustomer),
+    path('investments/', views.investment_list),
+    url(r'^api/investments/$', views.investment_list),
+    url(r'^api/investments/(?P<pk>[0-9]+)$', views.getInvestment),
+    path('stocks/', views.stock_list),
+    url(r'^api/stocks/$', views.stock_list),
+    url(r'^api/stocks/(?P<pk>[0-9]+)$', views.getStock)
+
 ]
